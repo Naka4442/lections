@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    margin: 0;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333333;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+form{
+    width: 500px;
+    height: 300px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+h2{
+    margin: 0;
+
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+}
+input{
+    width: 380px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 3px solid #50b0ff;
+    outline: none;
+    font-size: 20px;
+}
+button{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 5px solid #1467ac;
+    outline: none;
+    background-color: #50b0ff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:active{
+    box-shadow: 0 0 10px black inset;
+    border-bottom: none;
+}
+.comment{
+    width: 500px;
+    height: 50px;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    color: white;
+
+    display: flex;
+    gap: 10px;
+}
+.comment>h4{
+    margin: 0;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.comment>p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 500px){
+    main{
+        height: 100%;
+    }
+    form{
+        width: 80%;
+    }
+    input{
+        width: 80%;
+    }
+    .comment{
+        width: 80%;
+    }
+    h2{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+}
